@@ -1,0 +1,52 @@
+@import url('variables.css');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body div {
+    transform-style: preserve-3d;
+}
+
+.arena{
+    width: 100vw;
+    height: 100vh;
+    perspective: 500px;
+    /* animation: rotate 10s infinite 0s;   */
+}
+@keyframes rotate {
+    0%{
+        transform: rotateX(-10deg) rotateY(0deg);
+    }
+    
+    50%{
+        transform: rotateX(20deg) rotateY(360deg);
+    }
+    
+    100% {
+        transform: rotateX(-10deg) rotateY(0deg);
+    }
+}
+
+.floor{
+    width: 100%;
+    height: 2000px;
+    transform: rotateX(90deg) translateY(-1000px) translateZ(-100vh);
+    transform-origin: top;
+    position: absolute;
+}
+
+.floor1{
+    background-color: green; 
+}
+
+.floor2{
+    background-color: yellow;
+    left: -100vw;
+}
+
+.floor3{
+    background-color: orange;
+    left: 100vw;
+}
