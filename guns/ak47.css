@@ -1,0 +1,59 @@
+.main-cont{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gun-cont{
+    width: 100px;
+    height: 100px;
+}
+
+.gun-bottom{
+    position: absolute;
+    margin-left: -190px;
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(-10deg);
+    clip-path: polygon(0 0, 51% 0, 67% 14%, 100% 13%, 100% 45%, 0 69%);
+}
+.gun-middle{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -1px;
+    width: 250px;
+    height: 180px;
+    background-color: green;
+    clip-path: polygon(100% 0, 100% 15%, 86% 15%, 86% 35%, 3% 36%, 0 17%, 14% 0);
+}
+.gun-midhead{
+    width: 150px;
+    height: 120px;
+    background-color: yellow;
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 212px;
+    clip-path: polygon(25% 0%, 100% 0, 100% 51%, 0 52%, 0 20%, 25% 20%);
+}
+.gun-head1{
+    width: 170px;
+    height: 16px;
+    background-color: black;
+    position: absolute;
+    margin-left: 362px;
+    margin-top: 5px;
+}
+.gun-head2{
+    width: 100px;
+    height: 16px;
+    background-color: black;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 362px;
+}

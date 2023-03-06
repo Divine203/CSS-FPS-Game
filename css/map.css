@@ -1,0 +1,43 @@
+.map--cont{
+    width: 22.688rem;
+    height: 20.531rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.map--cont .map--arena{
+    width: 42.688rem;
+    height: 20.531rem;
+    position: absolute;
+    border: 1px solid blue;
+
+}
+
+.map--cont .vals{
+    position: absolute;
+}
+.map--cont .vals:nth-child(2){
+    top: 20px;
+}
+
+.map--cont .cross-air{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: black;
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+.map--cont .map--arena .enemy1{
+    width: 25px;
+    height: 63px;
+    position: relative;
+    left: 500px;
+    top: 150px;
+    background-color: red;
+}

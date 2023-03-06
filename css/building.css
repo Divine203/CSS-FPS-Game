@@ -1,0 +1,6 @@
+.building1--cont{
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    transform: translateZ(-3000px);
+}
