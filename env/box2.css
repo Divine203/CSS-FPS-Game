@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: rotate 10s infinite 0s;  
+}
+@keyframes rotate {
+    0%{
+        transform: rotateX(-10deg) rotateY(0deg);
+    }
+    
+    50%{
+        transform: rotateX(20deg) rotateY(360deg);
+    }
+    
+    100% {
+        transform: rotateX(-10deg) rotateY(0deg);
+    } */
+}
+
+.box2-cont{
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+
+.box2-cont div{
+    background: url('../assets/sprites/red-brick.png') no-repeat center center/cover;
+    position: absolute;
+}
+
+.box2--front{
+    width: 300px;
+    height: 200px;
+}
+.box2--back{
+    width: 300px;
+    height: 200px;
+    transform: translateZ(-300px);
+}
+.box2--left{
+    width: 300px;
+    height: 200px;
+    left: -300px;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+.box2--right{
+    width: 300px;
+    height: 200px;
+    left: 300px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+.box2--top{
+    width: 300px;
+    height: 300px;
+    top: -300px;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

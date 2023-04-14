@@ -1,0 +1,52 @@
+.floor{
+    width: 100vw;
+    height: 2000px;
+    /* background-color: green; */
+    background: url('../assets/sprites/floor.jpg');
+    /* background-repeat: repeat;
+    background-size: 600px;  */
+    position: absolute;
+    transform-origin: top;
+}
+
+.floor1{
+    transform: rotateX(1.5707957651rad) translateY(-1000px) translateZ(-100vh);
+}
+
+.floor2{
+    left: -100vw;
+    transform: rotateX(1.5707957651rad) translateY(-1000px) translateZ(-100vh);
+}
+
+.floor3{
+    left: 100vw;
+    transform: rotateX(1.5707957651rad) translateY(-1000px) translateZ(-100vh);
+}
+
+.floor4{
+    transform: rotateX(1.5707957651rad) translateY(-3000px) translateZ(-100vh);
+}
+
+.floor5{
+    left: -100vw;
+    transform: rotateX(1.5707957651rad) translateY(-3000px) translateZ(-100vh);
+}
+
+.floor6{
+    left: 100vw;
+    transform: rotateX(1.5707957651rad) translateY(-3000px) translateZ(-100vh);
+}
+
+.floor7{
+    transform: rotateX(1.5707957651rad) translateY(-5000px) translateZ(-100vh);
+}
+
+.floor8{
+    left: -100vw;
+    transform: rotateX(1.5707957651rad) translateY(-5000px) translateZ(-100vh);
+}
+
+.floor9{
+    left: 100vw;
+    transform: rotateX(1.5707957651rad) translateY(-5000px) translateZ(-100vh);
+}

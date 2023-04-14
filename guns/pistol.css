@@ -1,0 +1,204 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 10s infinite 0s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    } 
+    50%{
+        transform: rotateX(10deg) rotateY(360deg);
+    }
+    100%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+}
+
+.main div{ transform-style: preserve-3d; }
+
+.pistol--gun-cont{
+    width: 300px;
+    height: 300px;
+}
+.pistol-top div{
+    background: linear-gradient(to left,black, rgb(33, 33, 33));
+}
+
+.pistol-trigger div, .pistol-handle div{
+    background: linear-gradient(black, rgb(33, 33, 33));
+} 
+
+
+.pistol-top--front{
+    width: 390px;
+    height: 90px;
+    background-color: red;
+    position: absolute;
+}
+.pistol-top--back{
+    width: 390px;
+    height: 90px;
+    background-color: blue;
+    position: absolute;
+    transform: translateZ(-70px);
+}
+.pistol-top--top{
+    width: 390px;
+    height: 70px;
+    background-color: green;
+    position: absolute;
+    top: -70px;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+.pistol-top--bottom{
+    width: 390px;
+    height: 70px;
+    background-color: yellow;
+    position: absolute;
+    top: 90px;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+.pistol-top--left{
+    width: 70px;
+    height: 90px;
+    background: pink;
+    position: absolute;
+    left: -70px;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+.pistol-top--right{
+    width: 70px;
+    height: 90px;
+    background: rgb(9, 9, 9) !important;
+    position: absolute;
+    left: 390px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+
+
+.pistol-trigger{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    left: 230px;
+    top: 90px;
+}
+
+.pistol-trigger--bottom{
+    width: 100px;
+    height: 70px;
+    background-color: blue;
+    position: absolute;
+    top: 70px;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+
+.pistol-trigger--bottom-left{
+    width: 70px;
+    height: 45px;
+    background-color: green;
+    position: absolute;
+    top: 32px;
+    left: -85px;
+    transform: rotate(-45deg) rotateY(-90deg);
+    transform-origin: right;
+}
+
+.pistol-trigger--left{
+    width: 70px;
+    height: 45px;
+    background-color: green;
+    position: absolute;
+    top: -5px;
+    left: -100px;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+
+.pistol-trigger--pull1{
+    width: 20px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    left: 35px;
+    transform: rotateY(90deg) translateX(45px);
+}
+
+.pistol-trigger--pull2{
+    width: 20px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
+    left: 44px;
+    transform: rotate(30deg) rotateY(90deg) translateX(45px) translateY(30px);
+}
+
+
+.pistol-handle{
+    width: 90px;
+    height: 200px;
+    position: absolute;
+    left: 315px;
+    top: 40px;
+    transform: rotate(-20deg);
+}
+
+.pistol-handle div{
+    position: absolute;
+}
+
+.pistol-handle--front{
+    width: 90px;
+    height: 200px;
+    background-color: purple;
+}
+
+.pistol-handle--back{
+    width: 90px;
+    height: 200px;
+    background-color: navy;
+    transform: translateZ(-70px);
+}
+
+.pistol-handle--left{
+    width: 70px;
+    height: 200px;
+    background-color: lime;
+    left: -70px;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+
+.pistol-handle--right{
+    width: 70px;
+    height: 200px;
+    background-color: orange;
+    left: 90px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+
+.pistol-handle--bottom{
+    width: 90px;
+    height: 70px;
+    background-color: black;
+    top: 200px;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}

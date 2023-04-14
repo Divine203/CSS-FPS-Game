@@ -1,0 +1,58 @@
+.box div{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 550px;
+}
+
+.box{
+    position: absolute;
+    top: 20px;
+}
+
+.box1{
+    left: 0px;
+    transform: translateZ(-4000px);
+}
+/* .box1 div{ background: linear-gradient(navy, blue); } */
+.box1 div{ background: url('../assets/sprites/rock.png') no-repeat center center/cover; }
+
+.box2{
+    left: 1100px;
+    transform: translateZ(-2500px);
+}
+.box2 div{ background: url('../assets/sprites/rock.png') no-repeat center center/cover; }
+
+
+.box--back{
+    transform: translateZ(-100px);
+}
+.box--left{
+    left: -100px;
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+.box--right{
+    left: 100px;
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+.box--top{
+    top: 450px !important;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+
+.box2-cont.boxA{
+    position: absolute;
+    left: -400px;
+    top: 450px;
+    transform: translateZ(-2500px);
+}
+
+.box2-cont.boxB{
+    position: absolute;
+    left: 1300px;
+    top: 450px;
+    transform: translateZ(-3000px);
+}
